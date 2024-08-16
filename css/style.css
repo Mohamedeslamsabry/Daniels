@@ -1,0 +1,976 @@
+/* ! =================== Start Global ==================== */
+
+:root {
+  --Font-primary: "Montserrat", sans-serif;
+  --Font-secondary: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Font-primary);
+}
+body {
+  font-family: var(--Font-secondary);
+}
+
+/* 
+html{
+    scroll-padding: 100px;
+} */
+
+a {
+  color: inherit;
+  display: block;
+}
+html {
+  scroll-padding: 90px;
+}
+
+/* ! =================== End Global ==================== */
+
+/* ! =================== Start Navbar ==================== */
+
+.My-nav .navbar-brand {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 26px;
+  color: rgb(255, 255, 255);
+}
+
+.color-Nav {
+  background-color: #000000c6;
+}
+
+.My-nav .navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+
+.My-nav .navbar .navbar-nav .nav-item {
+  padding: 0 8px;
+}
+
+.My-nav .navbar .navbar-nav .nav-item a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.My-nav .navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transition: all 1s;
+}
+
+.My-nav .navbar .navbar-nav .nav-item .nav-link:hover::after {
+  width: 75%;
+}
+
+.My-nav .navbar .navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  height: 3px;
+  width: 75%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+/* ! =================== End Navbar ==================== */
+
+/* ! =================== Start Home ==================== */
+#Home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image: linear-gradient(#00000062, #000000c2), url(../imgs/bg.jpg);
+  color: #fff;
+}
+
+header .home-cap h5 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 55px;
+  text-align: center;
+}
+
+header .home-cap .my-span {
+  font-size: 60px;
+  font-weight: 200;
+  margin-bottom: 10px;
+  line-height: 72px;
+}
+
+h1::after {
+  content: "";
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 72px;
+  animation: typing 10s alternate infinite;
+}
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+
+  1% {
+    content: "|";
+  }
+
+  2% {
+    content: "D|";
+  }
+
+  3% {
+    content: "De|";
+  }
+
+  4% {
+    content: "Dev|";
+  }
+
+  5% {
+    content: "Devo|";
+  }
+
+  6% {
+    content: "Devol|";
+  }
+
+  7% {
+    content: "Devolp|";
+  }
+
+  8% {
+    content: "Devolpe|";
+  }
+
+  9% {
+    content: "Devolper |";
+  }
+
+  10% {
+    content: "Devolper D|";
+  }
+
+  11% {
+    content: "Devolper De|";
+  }
+
+  12% {
+    content: "Devolper Des|";
+  }
+
+  13% {
+    content: "Devolper Desi|";
+  }
+
+  14% {
+    content: "Devolper Desig|";
+  }
+
+  15% {
+    content: "Devolper Design|";
+  }
+
+  16% {
+    content: "Devolper Designe|";
+  }
+
+  17% {
+    content: "Devolper Designer|";
+  }
+
+  18% {
+    content: "Devolper Designer|";
+  }
+
+  19% {
+    content: "Devolper Designer|";
+  }
+
+  20% {
+    content: "Devolper Designer|";
+  }
+
+  21% {
+    content: "Devolper Designer|";
+  }
+
+  22% {
+    content: "Devolper Designe|";
+  }
+
+  23% {
+    content: "Graphic Design|";
+  }
+
+  24% {
+    content: "Graphic Desig|";
+  }
+
+  25% {
+    content: "Graphic Desi|";
+  }
+
+  26% {
+    content: "Graphic Des|";
+  }
+
+  27% {
+    content: "Graphic De|";
+  }
+
+  28% {
+    content: "Graphic D|";
+  }
+
+  29% {
+    content: "Graphic |";
+  }
+
+  30% {
+    content: "Graphic|";
+  }
+
+  31% {
+    content: "Graphi|";
+  }
+
+  32% {
+    content: "Graph|";
+  }
+
+  33% {
+    content: "Grap|";
+  }
+
+  34% {
+    content: "Gra|";
+  }
+
+  35% {
+    content: "Gr|";
+  }
+
+  36% {
+    content: "G|";
+  }
+
+  37% {
+    content: "|";
+  }
+
+  38% {
+    content: "|";
+  }
+
+  39% {
+    content: "|";
+  }
+
+  40% {
+    content: "L|";
+  }
+
+  45% {
+    content: "La|";
+  }
+
+  50% {
+    content: "Lar|";
+  }
+
+  52% {
+    content: "Larr|";
+  }
+
+  55% {
+    content: "Larry|";
+  }
+
+  57% {
+    content: "Larry D|";
+  }
+
+  60% {
+    content: "Larry Da|";
+  }
+
+  63% {
+    content: "Larray Dan|";
+  }
+
+  65% {
+    content: "Larray Dani";
+  }
+
+  67% {
+    content: "Larray Danie|";
+  }
+
+  70% {
+    content: "Larray Daniel|";
+  }
+
+  72% {
+    content: "Larray Daniels|";
+  }
+
+  75% {
+    content: "Larray Daniels|";
+  }
+
+  77% {
+    content: "Larray Daniels|";
+  }
+
+  78% {
+    content: "Larray Daniels|";
+  }
+
+  80% {
+    content: "Larray Daniels|";
+  }
+
+  82% {
+    content: "Larray Daniel|";
+  }
+
+  84% {
+    content: "Larray Danie|";
+  }
+
+  86% {
+    content: "Larray Dani|";
+  }
+
+  88% {
+    content: "Larray Dan|";
+  }
+
+  90% {
+    content: "Larray Da|";
+  }
+
+  91% {
+    content: "Larray D|";
+  }
+
+  92% {
+    content: "Larray |";
+  }
+
+  93% {
+    content: "Larra|";
+  }
+
+  94% {
+    content: "Larr|";
+  }
+
+  95% {
+    content: "Lar|";
+  }
+
+  96% {
+    content: "La|";
+  }
+
+  97% {
+    content: "L|";
+  }
+
+  98% {
+    content: "|";
+  }
+
+  99% {
+    content: "|";
+  }
+
+  100% {
+    content: "|";
+  }
+}
+
+
+#Home .home-cap .icon span {
+  margin: 10px;
+  background-color: #0000007b;
+  height: 35px;
+  width: 35px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#Home .home-cap .icon a {
+  text-decoration: none;
+}
+/* ================== End Home ===================== */
+
+/*! ===============About =================== */
+#About .about-cap h3 {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 33px;
+  color: rgb(52, 52, 52);
+}
+
+#About .about-cap span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(153, 153, 153);
+  letter-spacing: 2px;
+}
+
+#About .about-cap p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+
+#About .about-cap p span {
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+#About .about-img {
+  position: relative;
+}
+#About .about-img:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 10%;
+  bottom: -30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.prog1 {
+  left: 5%;
+}
+
+.prog2 {
+  right: 10%;
+}
+
+.prog3 {
+  right: 23%;
+}
+
+.prog4 {
+  right: 15%;
+}
+
+#About .about-cap .btn1:hover {
+  background-color: #fff;
+  color: #000;
+}
+/*! End About  */
+
+/*! ========Start Services ============= */
+#Services {
+  background-color: rgba(128, 128, 128, 0.149);
+}
+
+#Services .services-cap h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+  padding: 40px 0;
+}
+#Services .services-cap h2 {
+  position: relative;
+}
+#Services .services-cap h2::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  margin-bottom: 20px;
+}
+#Services .item1 h5 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+  color: rgb(52, 52, 52);
+}
+#Services .item1 p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb(116, 129, 130);
+}
+
+#Services .item1 span {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #cccccc58;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: all 1s ease;
+}
+
+#Services .item1:hover span {
+  background-color: #000;
+  color: #fff;
+
+}
+
+/*! Ensd Services  */
+
+/*! =================Start Work====================== */
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #00000093;
+  background-color: transparent;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #000;
+}
+#Work .nav .nav-link.active {
+  position: relative;
+}
+#Work .nav .nav-link.active::after {
+  content: "";
+  height: 2px;
+  width: 50%;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+.nav-link {
+  color: #000;
+}
+
+.iteem-1 {
+  position: relative;
+  overflow: hidden;
+}
+.layer {
+  position: absolute;
+  inset: 0;
+  background-color: #fff;
+  border: 5px solid #ccc;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.iteem-1:hover .layer {
+  opacity: 1;
+}
+
+.iteem-1 .icooon span {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: all 1s;
+  border: 2px solid #000;
+}
+
+.iteem-1 .icooon span:hover {
+  background-color: #fff;
+  color: #000;
+}
+#Work .work-cap h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+  padding: 40px 0;
+}
+#Work .work-cap h2 {
+  position: relative;
+}
+#Work .work-cap h2::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  z-index: -1;
+  display: inline-block;
+}
+/*! =========End Work====== */
+
+/*! =========Start Client====== */
+#Client {
+  background-color: #cccccc48;
+}
+#Client .my-img {
+  width: 100px;
+}
+
+.carousel-indicators [data-bs-target] {
+  text-indent: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+
+#Client .client-cap h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+  padding: 40px 0;
+}
+#Client .client-cap h2 {
+  position: relative;
+}
+#Client .client-cap h2::after {
+  content: "";
+  width: 25%;
+  height: 5px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#Client .carousel .p1 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+  width: 70%;
+  margin: auto;
+}
+
+#Client .carousel .p2 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+  color: rgb(136, 136, 136);
+  width: 70%;
+  margin: auto;
+}
+#Client .carousel h5 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+}
+
+#Client .indect1 {
+  transition: all 1s;
+}
+#Client .indect1:hover {
+  background-color: #ccc;
+}
+
+#Client .indect2 {
+  transition: all 1s;
+}
+#Client .indect2:hover {
+  background-color: #ccc;
+}
+
+#Client .indect3 {
+  transition: all 1s;
+}
+#Client .indect3:hover {
+  background-color: #ccc;
+}
+/*! /==============End Client================ */
+
+/*! /==============Start Team================ */
+#Team {
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+.layyyyer .icon-Asome span {
+  height: 40px;
+  width: 40px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  transition: all 1s;
+}
+
+.about--img {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-imagee {
+  background-color: #5b5b5b;
+}
+
+.layyyyer {
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  right: 3%;
+  bottom: 3%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all .5s;
+  overflow: hidden;
+}
+
+.abot-team:hover .layyyyer {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+
+.abot-team .about--img img {
+  transition: all 0.5s;
+}
+
+.about--img:hover img {
+  transform: scale(1.1);
+}
+
+.layyyyer .icon-Asome span{
+  transition: all .5s;
+}
+
+.layyyyer .icon-Asome span:hover {
+  background-color: #ffff;
+  color: #000;
+}
+#Team .team-cap h2 {
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+  padding: 40px 0;
+}
+#Team .team-cap h2 {
+  position: relative;
+}
+#Team .team-cap h2::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  z-index: -1;
+  display: inline-block;
+}
+/*! /==============End Team================ */
+
+/*! ==========Satrt Contact========== */
+#Contact .contact-item span {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border: 2px solid #000;
+  transition: all 1s;
+  background-color: #ccc;
+}
+
+#Contact .contact-item:hover span {
+  background-color: #000;
+  color: #fff;
+}
+
+.form-control{
+  background-color: #F4F4F4 ;
+  border-color: #F4F4F4;
+  
+}
+.form-control:focus {
+  background-color: #F4F4F4 ;
+  border-color: #F4F4F4;
+  outline: 0;
+  box-shadow: unset;
+  color: #000;
+}
+
+#Contact .my-form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+#Contact .contact-cap h2 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 44px;
+  color: rgb(52, 52, 52);
+  padding: 40px 0;
+}
+#Contact .contact-cap h2 {
+  position: relative;
+}
+#Contact .contact-cap h2::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+  z-index: -1;
+  display: inline-block;
+}
+#Contact h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: rgb(52, 52, 52);
+}
+
+#Contact p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+}
+
+
+textarea{
+resize: none;
+}
+
+/*! ============== end contact ================ */
+/*! start Caonter  */
+
+.counter i {
+  font-size: 30px;
+  margin: 20px 0;
+}
+.counter h3 {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 33px;
+  color: rgb(52, 52, 52);
+}
+
+.counter p {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgb(116, 129, 130);
+}
+/*! End Caonter  */
+/*! ================================= */
+@media screen and (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1050px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .home-cap .my-span {
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    line-height: 36px;
+  }
+
+  h1::after {
+    font-size: 30px;
+    font-weight: 400;
+
+    line-height: 36px;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #ccc;
+  }
+  .My-nav .navbar .navbar-nav .nav-item .nav-link::after {
+    left: 0;
+  }
+
+  .My-nav .navbar .navbar-nav .nav-item .nav-link:hover::after {
+    width: 10%;
+  }
+
+  .My-nav .navbar .navbar-nav .nav-item .nav-link.active::after {
+    width: 10%;
+    left: 0;
+  }
+  #About{
+    padding: 0;
+    margin: 0;
+  }
+  #About .about-cap{
+    margin:30px 0px !important;
+  }
+}
+
+/*! =================== */
